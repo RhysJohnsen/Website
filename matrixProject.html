@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>The Homepage of a CS Student</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<div class="dropdown">
+			<button class="dropbtn">Projects
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="projects.html">Projects-Home</a>
+				<a class="active" href="matrixProject.html">Matrix Determinant</a>
+				<a href="adventureProject.html">Adventure Game</a>
+				<a href="oldAdventureProject.html">Old Adventure Game</a>
+			</div>
+		</div>
+	</div>
+</head>
+<body>
+	<h1>Solve the determinant of any matrix!</h1>
+    <button onclick="runMatrix()">Solve a matrix.</button>
+	<p>Below is an example of a valid input. Try changing it!</p>
+	<textarea id="matirxInput" rows="5" cols="15">1 2 10
+-3 7 16
+4 6 -3</textarea>
+    <p id = output>Matrix not yet solved</p>
+	<div class = "vignette"></div>
+    <script src="matrix.js">
+	</script>
+</body>
+</html> 

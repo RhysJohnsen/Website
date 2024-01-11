@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>The Homepage of a CS Student</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<div class="dropdown">
+			<button class="dropbtn">Projects
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="projects.html">Projects-Home</a>
+				<a href="matrixProject.html">Matrix Determinant</a>
+				<a class="active" href="adventureProject.html">Adventure Game</a>
+				<a href="oldAdventureProject.html">Old Adventure Game</a>
+			</div>
+		</div>
+	</div>
+</head>
+<body>
+    <h1>Adventure Game</h1>
+	<p>
+        <a href="downloads/adventure.zip" download=>Download Adventure here!</a>
+    </p>
+	<p id = output>Output here!</p>
+	<!--<input type = "text" id = "input" name = "input"></input>!-->
+	<input type = "text" id = "input" name = "input" onkeydown="Game.step()"></input>
+	<button onclick="Game.step()">Submit</button>
+    <p>
+        This is a larger scale game I created with the intent of being more open ended. New content can be added without even going into the source code for the game. Just open the .txt files, and add what you like!
+
+        NPCs can be given randomized items usable by the player! They will even be used by the NPC to affect their attack and defence levels.
+    </p>
+
+	<p>Note: Right now, you cannot interact with NPCs. Currently, they will spawn, and have randomized sets of items, but they cannot be interactedd with.</p>
+	<div class = "vignette"></div>
+	<script src="adventureJS/Driver.js">
+
+	</script>
+	<script src="adventureJS/Input.js">
+	</script>
+</body>
+</html> 
