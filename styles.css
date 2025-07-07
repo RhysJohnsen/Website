@@ -1,14 +1,16 @@
 .active {
-  background-color: #9000ff;
+  /*background-color: #9000ff;*/
+  background-color: #a5a5a5;
 }
 
 body {
-  background-image: url('images/bg4.jpg');
+  background-image: url('images/bg5.jpg');
 }
 
 p {
   /*color: white;*/
-  background-color: #9c5effaf;
+  /*background-color: #9c5effaf;*/
+  background-color: #ffffffaf;
   border-radius: 25px;
   padding: 20px;
   width: 500px;
@@ -32,7 +34,8 @@ img {
 
 .navbar {
   overflow: hidden;
-  background-color: #200053;
+  /*background-color: #200053;*/
+  background-color: #474747;
   font-family: Arial;
 }
 
@@ -72,7 +75,8 @@ img {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #200053;
+  /*background-color: #200053;*/
+  background-color: #474747;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -81,7 +85,8 @@ img {
 .dropdown-content-active {
   display: none;
   position: absolute;
-  background-color: #9000ff;
+  /*background-color: #9000ff;*/
+  background-color: #c9c9c9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
